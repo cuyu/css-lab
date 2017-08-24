@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:900|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="overflow.css">
+</head>
+<body>
+<div class="overflow-visible">
+    <h3>overflow: visible, height: auto</h3>
+    `overflow: visible` is the default value for all elements.
+    The default `height` for all elements is `auto`, which means the final height is determined by the elements in it.
+    In block formatting context (i.e. BFC),
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+</div>
+<div class="overflow-hidden">
+    <h3>overflow: hidden, height: auto</h3>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+    <div class="float">
+        Float Block
+    </div>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+</div>
+
+
+<div class="overflow-visible height-100">
+    <h3>overflow: visible, height: 100px</h3>
+
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+</div>
+<div class="overflow-hidden height-100">
+    <h3>overflow: hidden, height: 100px</h3>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+    <div class="float">
+        Float Block
+    </div>
+    <div class="float">
+        Float Block
+    </div>
+    <!--<div class="none-float">-->
+        <!--None Float Block-->
+    <!--</div>-->
+</div>
+</body>
+</html>

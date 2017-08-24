@@ -1,0 +1,9 @@
+/********************Layout related css**********************/
+.default {
+    width: 40%;
+}
+
+.float {
+    width: 40%;
+    float: left;
+}
