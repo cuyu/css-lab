@@ -5,8 +5,7 @@
 
 .float {
     width: 80%;
-    /*float: left;*/
-    display: inline-block;
+    float: left;
 }
 
 .overflow-visible {
@@ -23,9 +22,15 @@
     height: 100px;
 }
 
-/*.overflow-visible:before,*/
-/*.overflow-visible:after {*/
-    /*display: table;*/
-    /*content: " ";*/
-    /*clear: both;*/
-/*}*/
+.pseudo:before,
+.pseudo:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+span {
+    display: table;
+    clear: both;
+    content: " "
+}

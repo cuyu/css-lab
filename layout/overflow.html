@@ -13,66 +13,67 @@
     `overflow: visible` is the default value for all elements.
     The default `height` for all elements is `auto`, which means the final height is determined by the elements in it.
     In block formatting context (i.e. BFC),
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
 </div>
+
 <div class="overflow-hidden">
     <h3>overflow: hidden, height: auto</h3>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
     <div class="float">
         Float Block
     </div>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
 </div>
 
 
 <div class="overflow-visible height-100">
     <h3>overflow: visible, height: 100px</h3>
 
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
 </div>
 <div class="overflow-hidden height-100">
     <h3>overflow: hidden, height: 100px</h3>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
     <div class="float">
         Float Block
     </div>
     <div class="float">
         Float Block
     </div>
-    <!--<div class="none-float">-->
-        <!--None Float Block-->
-    <!--</div>-->
+</div>
+
+<div class="overflow-visible">
+    <span></span>
+    <h3>overflow: visible, height: auto, use clearfix</h3>
+    Same effect as `overflow:hidden`, but by inserting empty elements
+    <div class="float">
+        Float Block
+    </div>
+    <div class="float">
+        Float Block
+    </div>
+    <span></span>
+</div>
+
+<div class="overflow-visible pseudo">
+    <h3>overflow: visible, height: auto, use clearfix by pseudo elements</h3>
+    Same effect as `overflow:hidden` and above, but using pseudo elements
+    <div class="float">
+        Float Block
+    </div>
+    <div class="float">
+        Float Block
+    </div>
 </div>
 </body>
 </html>
